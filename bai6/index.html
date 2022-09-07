@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bai 6</title>
+  </head>
+  <body>
+    <h1>bai 6</h1>
+
+    <input type="text" id="n1" />
+    <button id="cong" onclick="myFunction()">+</button>
+    <button id="tru" onclick="myFunction()">-</button>
+    <button id="nhan" onclick="myFunction()">*</button>
+    <button id="chia" onclick="myFunction()">/</button>
+    <input type="text" id="n2" />
+    <input type="text" id="result" />
+
+    <script type="text/javascript">
+      function myFunction() {
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var result = 0;
+        var cong = document.getElementById("cong").value;
+        var tru = document.getElementById("tru").value;
+        var nhan = document.getElementById("nhan").value;
+        var chia = document.getElementById("chia").value;
+        if (cong) {
+          result = parseInt(n1) + parseInt(n2);
+        } else if (tru == "-") {
+          result = parseInt(n1) - parseInt(n2);
+        } else if (nhan == "*") {
+          result = parseInt(n1) * parseInt(n2);
+        } else {
+          result = parseInt(n1) / parseInt(n2);
+        }
+        document.getElementById("result").value = result;
+      }
+    </script>
+  </body>
+</html>

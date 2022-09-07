@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bai4</title>
+  </head>
+  <body>
+    <input type="text" id="N" />
+    <button id="cong" onclick="myFunction()">ve tam giac</button>
+    <script type="text/javascript">
+      function myFunction() {
+        var N = document.getElementById("N").value;
+        N = parseInt(N);
+        for (i = 1; i < N; i++) {
+          for (j = 1; j <= i; j++) {
+            document.write(j + "");
+          }
+          document.writeln("<br/>");
+        }
+      }
+    </script>
+  </body>
+</html>
